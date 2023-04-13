@@ -1,0 +1,77 @@
+# Compiled class file
+build/
+.gradle/
+*.class
+node_modules/
+package-lock.json
+yarn.lock
+out/
+dist/
+.next/
+.scully/
+scully-routes.json
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDE Files
+/.gradle
+/.idea
+/caches
+/daemon
+/native
+/wrapper
+*.iml
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+
+**/__snapshots__
+
+*/.idea/*
+*.pyc
+*.gz
+
+# System Files
+**/.DS_Store
+*.db
+*.swp
+npm-debug.log
+.devops/seed/dump/
+.devops/seed/ch/
+.devops/seed/s3/

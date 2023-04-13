@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn" packages="app.playerzero.sdk.log4j">
+    <Appenders>
+        <PzSdkAppender name="PzSdkAppender">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <apiToken>required to test</apiToken>
+            <endpoint>http://localhost:9246</endpoint>
+            <dataset>sdk</dataset>
+            <prod>false</prod>
+        </PzSdkAppender>
+    </Appenders>
+
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="PzSdkAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
