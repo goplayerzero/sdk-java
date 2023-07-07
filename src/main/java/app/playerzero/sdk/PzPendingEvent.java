@@ -105,7 +105,7 @@ public class PzPendingEvent {
         HashMap<String, String> ids = null;
         if (id != null) {
             ids = new HashMap<>();
-            ids.put("User", id);
+            ids.put("UserId", id);
         }
         return identify(ids, metadata);
     }
