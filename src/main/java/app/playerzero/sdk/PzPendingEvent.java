@@ -105,7 +105,6 @@ public class PzPendingEvent {
         if (userId != null) {
             ids = new HashMap<>();
             ids.put("UserId", userId);
-            ids.put("User", userId); // todo: deprecated
         }
         return identify(ids, metadata);
     }
