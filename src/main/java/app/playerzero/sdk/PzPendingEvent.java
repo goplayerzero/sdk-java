@@ -98,7 +98,21 @@ public class PzPendingEvent {
     }
 
     public PzPendingEvent identify(String id) {
-        return identify(id, null);
+        return identify(id, (Map<String, Object>) null);
+    }
+    public PzPendingEvent identify(String userId, String anonId) { return identify(userId, anonId, null); }
+    public PzPendingEvent identify(String userId, String anonId, Map<String, Object> metadata) {
+        HashMap<String, String> ids = null;
+        if (id != null) {
+            ids = new HashMap<>();
+            ids.put("UserId", userId);
+            ids.put("AnonymousId", userId);
+
+            // todo: deprecated => no longer using User
+            if (userId != null) ids.put("User", userId);
+            else ids.put("User", anonId);
+        }
+        return identify(ids, metadata);
     }
 
     public PzPendingEvent identify(String id, Map<String, Object> metadata) {
@@ -106,6 +120,7 @@ public class PzPendingEvent {
         if (id != null) {
             ids = new HashMap<>();
             ids.put("UserId", id);
+            ids.put("User", id); // todo: deprecated
         }
         return identify(ids, metadata);
     }
