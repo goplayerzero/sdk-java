@@ -100,12 +100,11 @@ public class PzPendingEvent {
     public PzPendingEvent identify(String id) {
         return identify(id, null);
     }
-
-    public PzPendingEvent identify(String id, Map<String, Object> metadata) {
+    public PzPendingEvent identify(String userId, Map<String, Object> metadata) {
         HashMap<String, String> ids = null;
-        if (id != null) {
+        if (userId != null) {
             ids = new HashMap<>();
-            ids.put("User", id);
+            ids.put("UserId", userId);
         }
         return identify(ids, metadata);
     }

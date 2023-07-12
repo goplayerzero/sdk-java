@@ -94,7 +94,7 @@ public class PzApi {
         HashMap<String, String> ids = null;
         if (id != null) {
             ids = new HashMap<>();
-            ids.put("User", id);
+            ids.put("UserId", id);
         }
         identify(ids, metadata);
     }
