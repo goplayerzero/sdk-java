@@ -98,7 +98,7 @@ public class PzPendingEvent {
     }
 
     public PzPendingEvent identify(String id) {
-        return identify(id, (Map<String, Object>) null);
+        return identify(id, null);
     }
     public PzPendingEvent identify(String userId, Map<String, Object> metadata) {
         HashMap<String, String> ids = null;
